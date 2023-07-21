@@ -10,9 +10,9 @@
     transition: all 0.3s ease;
     &.sticky {
         padding: 15px 0;
-        background: rgb(0, 0, 0);
+        background: rgb(4, 0, 212);
         & .logo a {
-            color: #FAA6FF;
+            color: #00FFF6;
         
             span {
                 color: rgb(255, 255, 255);
@@ -29,9 +29,14 @@
     & .max-width {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     & .logo a {
+        background-color: #000000;
+        padding: 0.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 5px;
         color:#FAA6FF;
         font-size: 35px;
         font-weight: 600;
@@ -40,20 +45,28 @@
         }
     }
 
-    & .menu li {
-        list-style: none;
-        display: inline-block;
-        a {
-            font-weight: 800;
-            margin-left: 25px;
-            background-color: #7353BA;
-            padding: 10px;
-            border-radius: 30px;
-            border: 2px solid blueviolet;
-            color: black;
-            transition: color 0.3s ease;
-            &:hover {
-                color: crimson;
+    & .menu {
+        padding: 1rem;
+        padding-left: 0rem;
+        padding-right: 1.5rem;
+        border-radius: 5px;
+        background-color: black;
+        li {
+            list-style: none;
+            display: inline-block;
+            a {
+                font-weight: 800;
+                margin-left: 25px;
+                background-color: #5100ff;
+                padding: 10px;
+                border-radius: 5px;
+                border: 2px solid rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                transition: color 0.3s ease;
+                &:hover {
+                    background-color: rgb(255, 255, 255);
+                    color: #000000;
+                }
             }
         }
     }
@@ -71,10 +84,11 @@
 
 .home {
     display: flex;
-    background: url(/assets/images/WhatsApp\ Image\ 2023-04-12\ at\ 8.01.54\ PM.jpeg) no-repeat right;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.521)), url(/assets/images/abhist.jpeg) no-repeat right;
+    background-size: 100% 100%;
     background-color: #000000;
     height: 100vh;
-    color: rgb(241, 241, 241);
+    color: rgb(255, 255, 255);
     min-height: 500px;
     & .max-width {
         margin: auto 0 auto 30px;
@@ -92,13 +106,13 @@
         font-size: 40px;
         margin: 5px 0;
         & span {
-            color: #FAA6FF;
+            color: #00d9ff;
             font-weight: 900;
         }
     }
     & .home-content a{
         display: inline-block;
-        background: #7353BA;
+        background: #5100ff;
         color: black;
         font-size: 25px;
         padding: 12px 35px;
@@ -107,8 +121,9 @@
         border: 2px solid white;
         transition: all 0.3s ease;
         &:hover{
-            color: azure;
+            color: rgb(2, 2, 2);
             background: none;
+            border: 3px solid rgb(0, 0, 0);
         }
     }
 }
@@ -133,7 +148,7 @@ section{
 .about{
     font-family: 'Times New Roman', Times, serif;
     padding-bottom: 80px;
-    background-color: #7353BA;
+    background-color: #bdc3ff;
     .title{
         color: white;
     }
