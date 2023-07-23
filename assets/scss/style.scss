@@ -84,7 +84,7 @@
 
 .home {
     display: flex;
-    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 254, 254, 0.507)), url(/assets/images/abhist.jpeg) no-repeat right;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.397), rgba(255, 254, 254, 0.507)), url('/assets/images/abhist.jpeg');
     background-size: 100% 100%;
     background-color: #000000;
     height: 100vh;
@@ -401,7 +401,6 @@ section{
                     resize: none;
                     min-height: 100px;
                 }
-                
             }
             & .submit-group{
                 grid-column: 1 / -1;
